@@ -1,0 +1,22 @@
+<Calculator>:
+    orientation: "vertical"
+    padding: 20
+    spacing: 10
+
+    TextInput:
+        id: input
+        multiline: False
+        font_size: 32
+        hint_text: "Zadej příklad (např. 2+2)"
+
+    Button:
+        text: "Spočítej"
+        font_size: 24
+        size_hint_y: None
+        height: 60
+        on_press: root.calculate()
+
+    Label:
+        id: result
+        text: ""
+        font_size: 32
